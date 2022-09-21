@@ -1,0 +1,6 @@
+Oppgave 3
+
+b) Ordbøker og lister er to måter å holde orden på data på. Der lister er en samling av objekter, er ordbøker en samling av nøkkel - og innholdsverdier. I tilfelle vårt med klassen Spilleliste er det en instansvariabel som lagrer sangene i en liste. Fordelen med å bruke en liste framfor en ordbok i et slikt tilfelle er at lister er svært enkle å jobbe med. Det er lett å legge til, fjerne og endre rekkefølgen ved å bruke de innebygde listemetodene (append Remove, pop osv.). Selve oppsettet til listene gjør de også svært anvendelige, da lister har indekser med faste heltall, som referer til hvilken plass et objekt ligger i lista. En ordbok derimot, har et noe mer komplisert oppsett hvor nøkkelverdiene referer til innholdsverdiene. Det hadde i dette tilfellet krevd mer avanserte operasjoner. 
+
+
+c) Ved å unngå å ha filnavnet som et parameter til konstruktøren, åpner vi opp for mer valgfrihet i klassen vår. Ved opprettelsen av et spilleliste objekt knytter vi oss ikke fast til at vi MÅ lese inn en fil. Det er i stedet lagt inn som en metode i klassen og er derfor noe som ikke må leses inn. Dersom vi hadde hatt innlesningen av filen i konstruktøren hadde vi vært låst til at vi måtte ha lest inn et filnavn. 

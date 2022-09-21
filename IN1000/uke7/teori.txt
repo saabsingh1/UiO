@@ -1,0 +1,13 @@
+1) Hva er innkapsling? Hvorfor er det nyttig? 
+
+Innkapsling er til for å verne om de interne tilstandene til objekter fra utenforstående. Ved å innkapsle vil ikke ekstern kode kunne endre på tilstanden til et objekt utilsiktet. 
+Dette sørger for at metodene inne i klassen kan endre og lese av instansvariablene, mens koden utenfor må kalle på metoden på et objekt for å endre eller lese den i objektet. 
+
+2) Hva er grensesnittet til en klasse? Hvordan skiller det seg fra implementasjonen av en klasse? 
+
+Grensesnittet til en klasse vil være de ulike metodene som tilbys for å endre/lese objektet. Implementasjonen på en annen side, er selve kodingen av klassen, som ligger "usynlig" til for brukeren. 
+
+3) Hva er en instansmetode, og hvordan skiller dette seg fra prosedyrene/funksjonene vi har møtt hittil? 
+
+En instansmetode kan minne om en prosedyre/funksjon, men hovedforskjellen er at en metode krever tilhørighet til et spesifikt objekt for å bli kalt på. 
+En prosedyre/funksjon er ikke avhengig av dette for å utføre en operasjon. 
