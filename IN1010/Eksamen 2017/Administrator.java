@@ -1,0 +1,5 @@
+interface Administrator {
+
+    String hentAnsvarsKode ();
+    
+}
