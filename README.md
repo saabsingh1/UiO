@@ -2,9 +2,11 @@
 Skolearbeid, prosjekter og innleveringer gjort under studietiden på institutt for informatikk 2020-2023
 
 
-## IN1000 - Introduksjon til objektorientert programmering. Python som kodespråk.
+## Fagene 
 
-## IN1010 - Objektorientert programmering. Java som kodespråk. 
+IN1000 - Introduksjon til objektorientert programmering. Python som kodespråk.
 
-## IN2140 - Introduksjon til operativsystemer og datakommunikasjon. C som kodespråk. Eksamen i faget gikk ut på å skrive en UDP basert chat system med klienter og server. 
+IN1010 - Objektorientert programmering. Java som kodespråk. 
+
+IN2140 - Introduksjon til operativsystemer og datakommunikasjon. C som kodespråk. Eksamen i faget gikk ut på å skrive en UDP basert chat system med klienter og server. 
 
