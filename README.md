@@ -2,7 +2,7 @@
 Skolearbeid, prosjekter og innleveringer gjort under studietiden på institutt for informatikk 2020-2023
 
 
-## Fagene 
+## Oversikt
 
 IN1000 - Introduksjon til objektorientert programmering. Python som kodespråk.
 
