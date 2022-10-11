@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/currentDayLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DailyReport">
+
+
+    <!--android:background="@drawable/border"-->
+
+    <TextView
+        android:id="@+id/backGroundColor"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:focusable="false"
+        android:contentDescription="@string/curr_weather_description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cityDeclaration" />
+
+    <TextView
+        android:id="@+id/cityDeclaration"
+        android:layout_width="match_parent"
+        android:focusable="false"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="44sp"
+        android:paddingTop="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/temperatureView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/today_temp"
+        android:gravity="center"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/iconView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cityDeclaration"/>
+
+    <ImageView
+        android:id="@+id/iconView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:focusable="false"
+        app:layout_constraintHeight_min="80dp"
+        app:layout_constraintHeight_max="200dp"
+        app:layout_constraintWidth_max="200dp"
+        app:layout_constrainedHeight="true"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/weather_today"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/temperatureView"
+        app:layout_constraintBottom_toTopOf="@id/windImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/precipitationImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:focusable="false"
+        app:layout_constraintWidth_max="64dp"
+        app:layout_constraintHeight_max="64dp"
+        android:contentDescription="@string/seven_days_prec"
+        android:src="@drawable/ic_rain_black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/precipitationView"
+        app:layout_constraintTop_toBottomOf="@+id/iconView"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/windImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:focusable="false"
+        app:layout_constraintWidth_max="64dp"
+        app:layout_constraintHeight_max="64dp"
+        android:scaleType="centerInside"
+        android:contentDescription="@string/seven_days_wind"
+        android:src="@drawable/ic_wind_black"
+        app:layout_constraintStart_toEndOf="@+id/precipitationView"
+        app:layout_constraintEnd_toStartOf="@+id/windView"
+        app:layout_constraintTop_toBottomOf="@+id/iconView"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/precipitationView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:contentDescription="@string/mmpersec"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/precipitationImageView"
+        app:layout_constraintEnd_toStartOf="@id/windImageView"
+        app:layout_constraintTop_toBottomOf="@+id/iconView"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/windView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:contentDescription="@string/mmpersec"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/windImageView"
+        app:layout_constraintTop_toBottomOf="@+id/iconView"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

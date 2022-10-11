@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sevenDaysLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:contentDescription=""
+    tools:context=".SevenDaysReport">
+
+    <TextView
+        android:id="@+id/backGroundColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:focusable="false"
+        android:contentDescription="@string/curr_weather_description"
+        tools:layout_editor_absoluteX="-68dp"
+        tools:layout_editor_absoluteY="154dp" />
+
+    <TextView
+        android:id="@+id/tempMinView"
+        android:layout_width="match_parent"
+        android:focusable="false"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textSize="75sp"
+        app:layout_constraintTop_toBottomOf="@+id/tempMaxView"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/tempMaxView"
+        android:layout_width="match_parent"
+        android:focusable="false"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:text=""
+        android:textSize="64sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/day"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:id="@+id/precipitationImageView"
+        android:layout_width="77dp"
+        android:layout_height="77dp"
+        android:focusable="false"
+        android:layout_marginStart="16dp"
+        android:contentDescription="@string/seven_days_prec"
+        android:src="@drawable/ic_rain_black"
+        app:layout_constraintBottom_toTopOf="@+id/hvit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tempMinView"
+        app:layout_constraintVertical_bias="0.32" />
+
+    <ImageView
+        android:id="@+id/windImageView"
+        android:layout_width="77dp"
+        android:layout_height="77dp"
+        android:focusable="false"
+        android:contentDescription="@string/seven_days_wind"
+        android:src="@drawable/ic_wind_black"
+        app:layout_constraintBottom_toTopOf="@+id/hvit"
+        app:layout_constraintEnd_toStartOf="@+id/windAverage"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toEndOf="@+id/precAverage"
+        app:layout_constraintTop_toBottomOf="@+id/tempMinView"
+        app:layout_constraintVertical_bias="0.32" />
+
+    <TextView
+        android:id="@+id/windAverage"
+        android:focusable="false"
+        android:layout_width="77dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/hvit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tempMinView"
+        app:layout_constraintVertical_bias="0.055" />
+
+    <TextView
+        android:id="@+id/precAverage"
+        android:focusable="false"
+        android:layout_width="77dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/precipitationImageView"
+        app:layout_constraintTop_toBottomOf="@+id/tempMinView" />
+
+    <TextView
+        android:id="@+id/day"
+        android:focusable="false"
+        android:layout_width="410dp"
+        android:layout_height="129dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/seven_days_today_is"
+        android:gravity="center"
+        android:text=""
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hvit"
+        android:focusable="false"
+        android:layout_width="407dp"
+        android:layout_height="102dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="68dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text=""
+        android:textSize="150sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/precAverage"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/ettermiddag"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/between_6_and_12"
+        android:focusable="false"
+        android:gravity="center"
+        android:src="@drawable/clearsky_day"
+        app:layout_constraintBottom_toBottomOf="@+id/hvit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toEndOf="@+id/morgen"
+        app:layout_constraintTop_toTopOf="@+id/hvit"
+        app:layout_constraintVertical_bias="0.227"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/natt"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="24dp"
+        android:contentDescription="@string/between_12_and_6"
+        android:focusable="false"
+        android:gravity="center"
+        android:src="@drawable/clearsky_night"
+        app:layout_constraintBottom_toBottomOf="@+id/hvit"
+        app:layout_constraintStart_toStartOf="@+id/hvit"
+        app:layout_constraintTop_toTopOf="@+id/hvit"
+        app:layout_constraintVertical_bias="0.227" />
+
+    <ImageView
+        android:id="@+id/morgen"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/between_6_and_12_morning"
+        android:focusable="false"
+        android:gravity="center"
+        android:layerType="software"
+        android:src="@drawable/clearsky_day"
+        app:layout_constraintBottom_toBottomOf="@+id/hvit"
+        app:layout_constraintStart_toEndOf="@+id/natt"
+        app:layout_constraintTop_toTopOf="@+id/hvit"
+        app:layout_constraintVertical_bias="0.227"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/kveld"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="@string/between_6_and_12_evening"
+        android:focusable="false"
+        android:gravity="center"
+        android:src="@drawable/clearsky_night"
+        app:layout_constraintBottom_toBottomOf="@+id/hvit"
+        app:layout_constraintEnd_toEndOf="@+id/hvit"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/ettermiddag"
+        app:layout_constraintTop_toTopOf="@+id/hvit"
+        app:layout_constraintVertical_bias="0.227" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
